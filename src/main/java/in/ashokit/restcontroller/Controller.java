@@ -21,19 +21,19 @@ public class Controller {
 	@Autowired
 	private ServiceInterface ser;
 	
-	@GetMapping()
+	@GetMapping("/appId")
 	public ResponseEntity<String> findByAppId() {
 		String str = ser.findByAppId();
 		return new ResponseEntity<String>(str, HttpStatus.OK);
 	}
 	
-	@GetMapping
+	@GetMapping("/caseId")
 	public ResponseEntity<String> getCaseId(){
 		String str = ser.getCaseId();
 		return new ResponseEntity<String>(str, HttpStatus.OK);
 	}
 	
-	@GetMapping
+	@GetMapping("/plans")
 	public ResponseEntity<List<String>> getPlanNames(){
 		List<String> planNames= ser.getPlanNames();
 		return new ResponseEntity<>(planNames, HttpStatus.OK);
