@@ -12,7 +12,7 @@ public interface ServiceInterface {
 	
 	public String getCaseId();
 	
-	public List<String> findyByPlanNames();
+	public List<String> getPlanNames();
 	
 	public String saveIncomeDetails(IncomeDetails incomeDetails);
 	

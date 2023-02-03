@@ -34,8 +34,8 @@ public class Controller {
 	}
 	
 	@GetMapping
-	public ResponseEntity<List<String>> findyByPlanNames(){
-		List<String> planNames= ser.findyByPlanNames();
+	public ResponseEntity<List<String>> getPlanNames(){
+		List<String> planNames= ser.getPlanNames();
 		return new ResponseEntity<>(planNames, HttpStatus.OK);
 	}
 	
